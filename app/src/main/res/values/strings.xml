@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Mumma-Care</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_patient_screen">NewPatientScreen</string>
+    <string name="title_activity_existing_patient_screen">ExistingPatientScreen</string>
+    <string name="title_activity_existing_patient_information">ExistingPatientInformation</string>
+    <string name="title_activity_existing_user_information">ExistingUserInformation</string>
+    <string name="title_activity_send_sms">SendSMS</string>
+    <string name="title_activity_first_screen">FirstScreen</string>
+    <string name="title_activity_saved_numbers">SavedNumbers</string>
+    <string name="title_activity_first__visit">First_Visit</string>
+    <string name="title_activity_second__visit">Second_Visit</string>
+    <string name="title_activity_third__visit">Third_Visit</string>
+    <string name="title_activity_fourth__visit">Fourth_Visit</string>
+    <string name="title_activity_fifth__visit">Fifth_Visit</string>
+</resources>

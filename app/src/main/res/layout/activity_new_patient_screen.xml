@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.mumma_care.NewPatientScreen"
+    android:background="@drawable/backgroundtheme"
+    android:id="@+id/new_patient_screen">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveContact"
+        android:onClick="addContact"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_name"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:hint="Name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_age"
+                android:layout_below="@+id/contact_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:hint="Age" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_mobile"
+                android:layout_below="@+id/contact_age"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:hint="Mobile" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_husband"
+                android:layout_below="@+id/contact_mobile"
+                android:layout_alignRight="@+id/saveContact"
+                android:layout_alignEnd="@+id/saveContact"
+                android:layout_marginTop="39dp"
+                android:hint="Husband&apos;s Name" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_h_mobile"
+                android:layout_below="@+id/contact_husband"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:hint="Mobile"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_address"
+                android:layout_below="@+id/contact_h_mobile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:hint="Address" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_pregnancy"
+                android:layout_below="@+id/contact_husband"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:hint="Pregnancy Date"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_expected"
+                android:layout_below="@+id/contact_husband"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:hint="Expected date Of Delivery"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_diseases"
+                android:layout_below="@+id/contact_expected"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="38dp"
+                android:hint="Any Diseases Seen" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

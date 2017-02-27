@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundtheme"
+    android:clickable="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:id="@+id/welcome_to_mumma_care">
+
+    <Button
+        android:id="@+id/new_patient"
+        android:onClick="NewPatientClicked"
+        android:text="New Patient"
+        android:background="#6fffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/existing_patient"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="61dp" />
+
+    <Button
+        style="@style/MyButtonStyle"
+        android:id="@+id/existing_patient"
+        android:onClick="ExistingPatientClicked"
+        android:text="Existing Patient"
+        android:background="#75ffffff"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="@style/MyButtonStyle"
+        android:id="@+id/send_sms"
+        android:layout_marginTop="70dp"
+        android:onClick="SendSMSClicked"
+        android:text="Send SMS"
+        android:nestedScrollingEnabled="false"
+        android:background="#5effffff"
+        android:layout_below="@+id/existing_patient"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="36dp"
+        android:autoText="false"
+        android:clickable="true"
+        android:linksClickable="false"
+        android:onClick="MoreInfoClicked"
+        android:text="More Info"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Welcome To Mumma-Care"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

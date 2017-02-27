@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.mumma_care.ExistingPatientScreen"
+    android:background="@drawable/backgroundtheme"
+    android:id="@+id/existing_patient_screen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please LogIn"
+        android:id="@+id/textView12"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:ems="10"
+        android:id="@+id/name_input"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/phone_no_input"
+        android:layout_below="@+id/name_input"
+        android:layout_alignLeft="@+id/name_input"
+        android:layout_alignStart="@+id/name_input"
+        android:layout_marginTop="33dp"
+        android:hint="Phone Number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:id="@+id/log_in"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/phone_no_input"
+        android:layout_alignEnd="@+id/phone_no_input"
+        android:onClick="LogInClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/back2"
+        android:layout_alignTop="@+id/log_in"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="Back2Clicked" />
+
+</RelativeLayout>
